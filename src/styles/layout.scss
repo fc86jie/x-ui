@@ -1,0 +1,8 @@
+.x-container {
+  display: flex;
+  flex-direction: row;
+  &-vertical {
+    display: flex;
+    flex-direction: column;
+  }
+}

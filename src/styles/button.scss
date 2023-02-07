@@ -1,0 +1,103 @@
+@use './base.scss' as *;
+
+.x-button {
+  border-radius: $borderRadius;
+  padding: $defaultPaddingTop $defaultPaddingLeft;
+  border: solid 1px;
+}
+
+.x-button-large {
+  padding: $largePaddingTop $largePaddingLeft;
+}
+
+.x-button-small {
+  padding: $smallPaddingTop $smallPaddingLeft;
+}
+
+.x-button--default {
+  background-color: $defaultColor;
+  color: $defaultTextColor;
+  border-color: $defaultTextColor;
+}
+
+.x-button--default:hover {
+  background-color: $defaultHoverBgColor;
+  color: $defaultHoverColor;
+  border-color: $defaultHoverBorderColor;
+}
+
+.x-button--default:active {
+  background-color: $defaultHoverBgColor;
+  color: $defaultHoverColor;
+  border-color: $defaultHoverColor;
+}
+
+.x-button--primary {
+  background-color: $primaryColor;
+  color: $primaryTextColor;
+  border-color: $primaryColor;
+}
+
+.x-button--primary:hover {
+  background-color: $primaryHoverColor;
+}
+
+.x-button--primary:active {
+  background-color: $primaryActiveColor;
+}
+
+.x-button--warning {
+  background-color: $warningColor;
+  color: $warningTextColor;
+  border-color: $warningColor;
+}
+
+.x-button--warning:hover {
+  background-color: $warningHoverColor;
+}
+
+.x-button--warning:active {
+  background-color: $warningActiveColor;
+}
+
+.x-button--danger {
+  background-color: $dangerColor;
+  color: $dangerTextColor;
+  border-color: $dangerColor;
+}
+
+.x-button--danger:hover {
+  background-color: $dangerHoverColor;
+}
+
+.x-button--danger:active {
+  background-color: $dangerActiveColor;
+}
+
+.x-button--success {
+  background-color: $successColor;
+  color: $successTextColor;
+  border-color: $successColor;
+}
+
+.x-button--success:hover {
+  background-color: $successHoverColor;
+}
+
+.x-button--success:active {
+  background-color: $successActiveColor;
+}
+
+.x-button--info {
+  background-color: $infoColor;
+  color: $infoTextColor;
+  border-color: $infoColor;
+}
+
+.x-button--info:hover {
+  background-color: $infoHoverColor;
+}
+
+.x-button--info:active {
+  background-color: $infoActiveColor;
+}
