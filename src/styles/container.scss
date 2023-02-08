@@ -1,0 +1,10 @@
+.x-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 0;
+  &-vertical {
+    display: flex;
+    flex-direction: column;
+  }
+}

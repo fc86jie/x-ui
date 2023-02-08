@@ -2,16 +2,36 @@
   "name": "x-ui",
   "version": "1.0.0",
   "description": "x-ui component library",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "src",
+    "packages",
+    "example"
+  ],
   "scripts": {
-    "dev": "webpack serve --config webpack.dev.js --color --progress --hot"
+    "dev": "webpack serve --config webpack.dev.js --color --progress --hot",
+    "build": "webpack --config webpack.prod.js --color --progress",
+    "build:style": "gulp"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "peerDependencies": {
+    "vue": "^3.2.47"
+  },
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
     "css-loader": "^6.7.3",
+    "cssnano": "^5.1.14",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
     "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^8.0.0",
+    "postcss": "^8.4.21",
     "sass": "^1.58.0",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
