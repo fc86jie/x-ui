@@ -1,7 +1,7 @@
 {
-  "name": "x-ui",
+  "name": "xfc-ui",
   "version": "1.0.0",
-  "description": "x-ui component library",
+  "description": "xfc-ui component library",
   "main": "lib/index.js",
   "files": [
     "lib",
