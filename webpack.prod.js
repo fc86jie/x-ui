@@ -22,6 +22,7 @@ module.exports = {
     main: './packages/main',
     header: './packages/header',
     container: './packages/container',
+    timeSelection: './packages/timeSelection',
   },
   output: {
     filename: '[name].js',

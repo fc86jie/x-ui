@@ -1,0 +1,127 @@
+.x-calendar {
+  user-select: none;
+  position: relative;
+  display: inline-block;
+  &-table {
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    th,
+    tr,
+    td {
+      padding: 0;
+      border: 1px solid #dee4f5;
+      font-size: 12px;
+      text-align: center;
+      line-height: 1.8em;
+      transition: background 0.2s ease;
+
+      .calendar-atom-time {
+        background: #f5f5f5;
+      }
+      .week-td {
+        width: 70px;
+      }
+      .td-selected-time {
+        clear: both;
+        text-align: left;
+        line-height: 2.4em;
+        p {
+          max-width: 625px;
+          line-height: 1.4em;
+          word-break: break-all;
+          margin: 0 0 8px !important;
+          .time-text {
+            color: #333;
+          }
+        }
+      }
+    }
+
+    tbody tr:last-of-type td:last-of-type {
+      padding: 0 10px;
+    }
+    td:last-child {
+      line-height: 2.4em;
+    }
+    .pull-left {
+      float: left !important;
+    }
+    .pull-right {
+      float: right !important;
+    }
+    a {
+      cursor: pointer;
+      color: #16a307;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    tr .ui-selected {
+      background: #16a307;
+    }
+
+    $prefixName: x-calendar-popover;
+
+    .#{$prefixName} {
+      display: inline-block;
+      position: absolute;
+      &-wrapper {
+        position: absolute;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 182px;
+        padding: 12px 0;
+        .#{$prefixName}-arrow {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: #fff;
+          transform: rotate(45deg);
+          border-radius: 2px;
+          border: 0 solid #dee4f5;
+          bottom: 7px;
+          left: 86px;
+          border-top-width: 0;
+          border-right-width: 1px;
+          border-bottom-width: 1px;
+          border-left-width: 0;
+          box-shadow: 3px 3px 7px 0 rgba(118, 129, 179, 0.15);
+        }
+        .#{$prefixName}-panel {
+          padding: 15px 20px;
+          background-color: #fff;
+          border-radius: 2px;
+          border: 1px solid #dee4f5;
+          box-shadow: 0 2px 8px 0 rgba(118, 129, 179, 0.15);
+          .#{$prefixName}-body {
+            color: #999;
+            font-size: 14px;
+            line-height: 18px;
+            white-space: normal;
+          }
+        }
+      }
+    }
+  }
+
+  .x-schedule {
+    background: #16a307;
+    width: 0;
+    height: 0;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+  }
+  .no-transition {
+    transition: none;
+  }
+}

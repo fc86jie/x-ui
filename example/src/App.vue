@@ -2,13 +2,14 @@
  * @Author: wangrenjie86@gmail.com
  * @Date: 2023-02-07 13:05:24
  * @LastEditors: wangrenjie86@gmail.com
- * @LastEditTime: 2023-02-08 12:27:35
+ * @LastEditTime: 2023-02-25 17:28:23
  * @FilePath: \example\src\App.vue
  * @Description: 
 -->
 
 <template>
   <div class="example-container">
+    <x-time-selection v-model="time"></x-time-selection>
     <x-header>头部</x-header>
     <x-container>
       <x-aside width="200px">菜单</x-aside>
@@ -27,9 +28,13 @@
 </template>
 
 <script>
+import { ref } from 'vue';
 export default {
   setup() {
-    return {};
+    let time = ref('');
+    return {
+      time,
+    };
   },
 };
 </script>
